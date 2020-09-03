@@ -47,15 +47,18 @@ client.on("message", async message => {
   }
 } else if (message.content.startsWith(`${prefix}alon`)) {
   for (var i = 0; i < 12; i++) {
+
   message.channel.send("<@202605269295824897> pspsps IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIAAAAAAAA");
+
   }
 } else if (message.content.startsWith(`${prefix}king`)) {
   for (var i = 0; i < 12; i++) {
   message.channel.send("<@415587440489922580> pspsps eu to TENTANDO");
   }
 } else if (message.content.startsWith(`${prefix}help`)) {
-  
+ 
   message.channel.send("***Olá pspspsers*** \n **>Comandos .pspsps:**\n .help\n **Música:** .play urlYT .stop .skip \n **Chamando os gatinhos:** .nick .gaud .pau .fred .alon .king");
+
   } else if (message.content.startsWith(`${prefix}nick`)) {
 		for (var i = 0; i < 12; i++) {
     message.channel.send("<@283792149584019456> pspsps kibisurdo");
@@ -151,7 +154,6 @@ function play(guild, song) {
     })
     .on("error", error => console.error(error));
   dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
-
   serverQueue.textChannel.send(`Start playing: *${song.title}*`);
 }
 
