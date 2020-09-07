@@ -47,23 +47,15 @@ client.on("message", async message => {
   }
 } else if (message.content.startsWith(`${prefix}alon`)) {
   for (var i = 0; i < 12; i++) {
-
-  message.channel.send("<@202605269295824897> pspsps IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIAAAAAAAA");
-
+  message.channel.send("<@202605269295824897> pspsps IIIIIIIIIIIIIIIIIIIIIIIIIIIIII");
   }
 } else if (message.content.startsWith(`${prefix}king`)) {
   for (var i = 0; i < 12; i++) {
   message.channel.send("<@415587440489922580> pspsps eu to TENTANDO");
   }
 } else if (message.content.startsWith(`${prefix}help`)) {
-<<<<<<< HEAD
   message.channel.send("**Olá pspspsers* \n *>Comandos .pspsps:*\n .help\n **Música:* .play urlYT .stop .skip \n *Chamando os gatinhos:* .nick .gaud .pau .fred .alon .king");
   
-=======
- 
-  message.channel.send("***Olá pspspsers*** \n **>Comandos .pspsps:**\n .help\n **Música:** .play urlYT .stop .skip \n **Chamando os gatinhos:** .nick .gaud .pau .fred .alon .king");
-
->>>>>>> d5436e453db97ab8b4e00ac8d60d27cf76bdd643
   } else if (message.content.startsWith(`${prefix}nick`)) {
 		for (var i = 0; i < 12; i++) {
     message.channel.send("<@283792149584019456> pspsps kibisurdo");
