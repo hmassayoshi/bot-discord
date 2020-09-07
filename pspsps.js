@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const { prefix, token } = require("./config.json");
 const ytdl = require("ytdl-core");
-
+const yts = require( 'yt-search');
 const client = new Discord.Client();
 
 const queue = new Map();
@@ -70,7 +70,7 @@ client.on("message", async message => {
 });
 
 async function execute(message, serverQueue) {
-  const args = message.content.split(" ");
+  let args = message.content.replace(`${prefix}play `,'');
 
   const voiceChannel = message.member.voice.channel;
   if (!voiceChannel)
@@ -83,13 +83,22 @@ async function execute(message, serverQueue) {
       "I need the permissions to join and speak in your voice channel!"
     );
   }
-
-  const songInfo = await ytdl.getInfo(args[1]);
-  const song = {
+  let song
+  if (args.startsWith('https')){
+  const songInfo = await ytdl.getInfo(args);
+   song = {
     title: songInfo.title,
     url: songInfo.video_url
   };
-
+  }
+  else{
+    const {videos} = await yts(args);
+  if (!videos.length) return message.channel.send("No songs were found!");
+  song = {
+    title: videos[0].title,
+    url: videos[0].url
+  };
+  }
   if (!serverQueue) {
     const queueContruct = {
       textChannel: message.channel,
