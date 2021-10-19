@@ -53,7 +53,11 @@ client.on("message", async message => {
   for (var i = 0; i < 12; i++) {
   message.channel.send("<@415587440489922580> pspsps eu to TENTANDO");
   }
-} else if (message.content.startsWith(`${prefix}help`)) {
+} else if (message.content.startsWith(`${prefix}gordo`)) {
+  for (var i = 0; i < 12; i++) {
+  message.channel.send("<@699761054405885974> para de jogar Witcher");
+  }
+}else if (message.content.startsWith(`${prefix}help`)) {
   message.channel.send("**Olá pspspsers* \n *>Comandos .pspsps:*\n .help\n **Música:* .play urlYT .stop .skip \n *Chamando os gatinhos:* .nick .gaud .pau .fred .alon .king");
   
   } else if (message.content.startsWith(`${prefix}nick`)) {
