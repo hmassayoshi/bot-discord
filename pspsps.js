@@ -84,8 +84,8 @@ async function execute(message, serverQueue) {
   if (args.startsWith('https')){
   const songInfo = await ytdl.getInfo(args);
    song = {
-    title: songInfo.title,
-    url: songInfo.video_url
+    title: songInfo.videoDetails.title,
+    url: songInfo.videoDetails.video_url
   };
   }
   else{
