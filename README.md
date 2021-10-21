@@ -13,7 +13,7 @@
 ```
 npm install
 
-node pspsps.js
+npm start
 ```
 
 ##Para rodar

@@ -2,7 +2,7 @@
   "name": "bot-discord",
   "version": "1.0.0",
   "description": "Para iniciar\r ```\r npm install",
-  "main": "pspsps.js",
+  "main": "main.js",
   "dependencies": {
     "@discordjs/opus": "github:discordjs/opus",
     "discord.js": "12.5.3",
@@ -13,7 +13,7 @@
     "yts": "2.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node main.js"
   },
   "repository": {
     "type": "git",
