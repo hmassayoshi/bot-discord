@@ -1,0 +1,27 @@
+{
+  "name": "bot-discord",
+  "version": "1.0.0",
+  "description": "Para iniciar\r ```\r npm install",
+  "main": "pspsps.js",
+  "dependencies": {
+    "@discordjs/opus": "github:discordjs/opus",
+    "discord.js": "12.5.3",
+    "ffmpeg-static": "4.4.0",
+    "yt-search": "2.10.2",
+    "ytdl-core": "4.9.1",
+    "yts": "2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hmassayoshi/bot-discord.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hmassayoshi/bot-discord/issues"
+  },
+  "homepage": "https://github.com/hmassayoshi/bot-discord#readme"
+}
