@@ -1,11 +1,22 @@
-Para iniciar
+##Pré requisitos
+- node.js
+
+
+##Setting
+
+- Copiar token de: https://discord.com/developers/applications/750784039086194728/bot
+- Inserir em tokenExample.json
+- Renomear tokenExample.json para token.json
+
+
+##Para iniciar
 ```
 npm install
 
 node pspsps.js
 ```
 
-Para rodar
+##Para rodar
 ```
 {command}play {url ou nome da música}
 ```
