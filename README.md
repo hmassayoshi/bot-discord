@@ -1,5 +1,5 @@
 ##Pré requisitos
-- node.js
+- node.js 14.18.1
 
 
 ##Setting
